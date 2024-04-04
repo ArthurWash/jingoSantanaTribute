@@ -77,3 +77,6 @@ body  {
         box-shadow: none;
       }
 }
+
+/* Shows Settings */
+.btn-outline-light {margin-left: 20px;}

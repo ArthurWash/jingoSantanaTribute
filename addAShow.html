@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a show</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #content {
+            text-align: center;
+            background: rgb(37, 37, 37);
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+
+    <!-- Hello, developer or tech savy friend! You have found some sensitive info. Please be nice to this local band and don't mess with the scheduling of their shows :) -->
+    <script>
+        var password = prompt("Please enter the password to view this page", "");
+        
+        if (password != "yourPassword") {
+            document.getElementById('content').innerHTML = 'Wrong password';
+        } else {
+            document.getElementById('content').innerHTML = `
+                <h1>Add a show</h1>
+        
+                <p>Fill out the form below to add a show to the list on jingosantanatribute.com/shows.</p>
+        
+                <br><br>
+        
+                <form id="showForm" action="addAShow.php" method="post">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br><br>
+                    <label for="time">Time:</label>
+                    <input type="text" id="time" name="time" pattern="(1[0-2]|0?[1-9]):[0-5][0-9] (AM|PM)" title="Enter time in 12-hour format (HH:MM AM/PM)" required>
+                    <br><br>
+                    <label for="venue">Venue:</label>
+                    <input type="text" id="venue" name="venue" required>
+                    <br><br>
+                    <label for="city">City, State:</label>
+                    <input type="text" id="city" name="city" required>
+                    <br><br>
+                    <label for="ticket_link">Ticket Link:</label>
+                    <input type="url" id="ticket_link" name="ticket_link">
+                    <br><br>
+                    <input type="submit" value="Add Show">
+                </form>
+            `;
+        }
+        </script>
+</body>
+</html>
