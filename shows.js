@@ -11,7 +11,7 @@ $(document).ready(function() {
                     html += '<div class="col-md ml-md-auto mb-3 d-flex align-items-start align-items-md-center justify-content-start justify-content-md-center"><p class="show-venue mb-0">' + show.venue + ' @ ' + show.time + '</p></div>';
                     html += '<div class="col-md ml-md-auto mb-3 d-flex align-items-start align-items-md-center justify-content-start justify-content-md-end"><p class="show-location mb-0 mr-3">' + show.city + '</p>';
                     if (show.ticket_link) {
-                        html += '<a href="' + show.ticket_link + '" class="btn btn-outline-light">Buy Tickets</a>';
+                        html += '<a href="' + show.ticket_link + '" class="btn btn-outline-light buyTix">Buy Tickets</a>';
                     }
                     html += '</div>';
                     html += '</div>';
