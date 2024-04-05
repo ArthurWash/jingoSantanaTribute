@@ -80,3 +80,39 @@ body  {
 
 /* Shows Settings */
 .buyTix {margin-left: 20px;}
+
+/* Footer Settings */
+footer {
+  color: #D5DEE4;
+}
+
+.socials {
+  width: 3%;
+  height: auto;
+}
+
+div a {margin-right: 50px;}
+
+div a:last-child {
+  margin-right: 0;
+}
+
+
+@media (max-width: 1200px) {
+  .socials{
+      width: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .socials{width: 8%;
+  }
+
+  div a {margin-right: 0;}
+}
+
+.credits {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
