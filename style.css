@@ -79,7 +79,25 @@ body  {
 }
 
 /* Shows Settings */
+.showBanner {
+  position: relative;
+  background: url('images/showBanner.webp') no-repeat center center; 
+  background-size: cover;
+  padding-top: 75%; /* This controls the aspect ratio */
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .buyTix {margin-left: 20px;}
+
+#upcomingShowsBG {
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#showFooter {margin-top: 700px;}
 
 /* Footer Settings */
 footer {
