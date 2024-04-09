@@ -24,14 +24,11 @@ body  {
   .carousel-fade .active.carousel-item-end {
     transition: opacity 1s ease-in-out;
   }
-  
 
 .carousel-container {
-    border: 10px solid #221ac1; /* Adjust the border size and color as needed */
     padding: 10px; /* Adjust the padding to control the white space */
     max-width: 600px; /* Set a fixed width for the container */
     margin: 0 auto; /* Center the container horizontally */
-    box-shadow: 10px 10px 20px lightgray;
   }
   
   .carousel-inner {
