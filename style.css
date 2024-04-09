@@ -19,7 +19,7 @@ body  {
   .carousel-item:not(.active) {
     opacity: 0;
   }
-  
+
   .carousel-fade .active.carousel-item-start,
   .carousel-fade .active.carousel-item-end {
     transition: opacity 1s ease-in-out;
@@ -27,7 +27,7 @@ body  {
   
 
 .carousel-container {
-    border: 10px solid #f90101; /* Adjust the border size and color as needed */
+    border: 10px solid #221ac1; /* Adjust the border size and color as needed */
     padding: 10px; /* Adjust the padding to control the white space */
     max-width: 600px; /* Set a fixed width for the container */
     margin: 0 auto; /* Center the container horizontally */
