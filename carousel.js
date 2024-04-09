@@ -25,8 +25,16 @@ fetch('https://www.jingosantanatribute.com/get-images.php') // Make sure to repl
         imgElement.className = 'd-block mx-auto img-fluid';
         imgElement.alt = 'Image ' + (index + 1);
 
-        // Append the img element to the carousel item div
-        carouselItemDiv.appendChild(imgElement);
+        // Create an a element for lightbox
+        let aElement = document.createElement('a');
+        aElement.href = imgElement.src;
+        aElement.setAttribute('data-lightbox', 'carouselImages');
+
+        // Append the img element to the a element
+        aElement.appendChild(imgElement);
+
+        // Append the a element to the carousel item div
+        carouselItemDiv.appendChild(aElement);
 
         // Append the carousel item div to the carousel inner div
         carouselInnerDiv.appendChild(carouselItemDiv);

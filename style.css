@@ -55,6 +55,16 @@ body  {
     border-radius: 10px;
   }
 
+  /* Gallery Settings */
+  .lb-nav .lb-next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+  }
+
 
 /* Sizing */
 
