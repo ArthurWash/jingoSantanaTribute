@@ -11,6 +11,30 @@ body  {
     font-style: normal;
 }
 
+/* Homepage Settings */
+.contactWrap {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.innerWrap {
+  display: inline-block;
+  background-color: #391d659c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact {
+  padding: 50px;
+  text-decoration: none;
+}
+
+@media(max-width: 576px) {
+  .contactWrap {margin-top: 100px;}
+  .contact {padding: 20px;}
+}
+
 /* Carousel Settings */
 .carousel-item {
     transition: opacity 1s ease-in-out;
@@ -86,25 +110,40 @@ body  {
 }
 
 /* Shows Settings */
-.showBanner {
-  position: relative;
-  background: url('images/showBanner.webp') no-repeat center center; 
-  background-size: cover;
-  padding-top: 75%; /* This controls the aspect ratio */
-  width: 100%;
-  margin-bottom: 50px;
+.showBanner img {
+  display: block;
+  width: 50%; /* Adjust this to change the width of the image */
+  height: auto; /* This maintains the aspect ratio of the image */
+  margin: 0 auto; /* This centers the image horizontally */
+}
+
+.header {text-align: center;}
+
+@media (max-width: 490px) {
+  .showBanner img {width: 100%;}
+
+  .header {text-align: left;}
+}
+
+.shows-container {
+  max-width: none;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .buyTix {margin-left: 20px;}
 
 #upcomingShowsBG {
-    background-color: rgba(0, 0, 0, 0.562);
     padding: 20px;
     margin-top: 20px;
-    border-radius: 10px;
+}
+
+@media (min-width: 576px) {
+  .show-text-large {font-size: 1em;}
 }
 
 #showFooter {margin-top: 700px;}
+
 
 /* Footer Settings */
 footer {
